@@ -1,0 +1,109 @@
+{
+  "title": "Desain Grafis untuk Pemula",
+  "instructor": {
+    "name": "Sharon Joetama",
+    "description": "Seorang instruktur untuk kelas Desain Grafis untuk pemula."
+  },
+  "data": [
+    {
+      "id": 1,
+      "category_name": "perkenalan",
+      "sections": [
+        {
+          "id": 1,
+          "name": "Intro Desain Grafis untuk Pemula",
+          "duration": 70
+        },
+        {
+          "id": 2,
+          "name": "Notes",
+          "duration": 32
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "category_name": "konsep dasar desain grafis",
+      "sections": [
+        {
+          "id": 1,
+          "name": "grafis",
+          "duration": 150
+        },
+        {
+          "id": 2,
+          "name": "form & space",
+          "duration": 180
+        },
+        {
+          "id": 3,
+          "name": "form & space 2",
+          "duration": 280
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "category_name": "pengertian mengenai komposisi",
+      "sections": [
+        {
+          "id": 1,
+          "name": "komposisi",
+          "duration": 400
+        },
+        {
+          "id": 2,
+          "name": "komposisi 2",
+          "duration": 100
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "category_name": "penggunaan warna",
+      "sections": [
+        {
+          "id": 1,
+          "name": "RGB",
+          "duration": 90
+        },
+        {
+          "id": 2,
+          "name": "CMYK",
+          "duration": 120
+        },
+        {
+          "id": 3,
+          "name": "warna 1",
+          "duration": 120
+        },
+        {
+          "id": 4,
+          "name": "warna 2",
+          "duration": 120
+        },
+        {
+          "id": 5,
+          "name": "warna pelangi",
+          "duration": 120
+        },
+        {
+          "id": 6,
+          "name": "suummary of warna",
+          "duration": 120
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "category_name": "assignment",
+      "sections": [
+        {
+          "id": 1,
+          "name": "assignemtn",
+          "duration": 60
+        }
+      ]
+    }
+  ]
+}
