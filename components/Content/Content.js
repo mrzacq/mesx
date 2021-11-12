@@ -1,11 +1,12 @@
 import { useState } from "react";
 import TopAccordion from "./TopAccordion";
 import TitleContent from "./TitleContent";
-import { formatWaktu } from "../../helpers/formatWaktu";
-const { title, instructor, data } = require("../course.json");
+import Instructor from "./Instructor";
 
-function Content() {
-  const [showFirst, setShowFirst] = useState(false);
+import { formatWaktu } from "../../helpers/formatWaktu";
+
+function Content({ title, instructor, data }) {
+  const [showFirst, setShowFirst] = useState(true);
   const [showContent, setShowContent] = useState([]);
 
   const handleShowContent = (index) => {
@@ -26,7 +27,7 @@ function Content() {
   totalDuration = formatWaktu(totalDuration);
 
   let totalMateri = data.length;
-  console.log(data);
+
   return (
     <div>
       <TopAccordion
@@ -34,12 +35,13 @@ function Content() {
         totalMateri={totalMateri}
         setShowFirst={setShowFirst}
         showFirst={showFirst}
+        title={title}
       />
       {showFirst && (
         <div>
           {data.map((el) => {
             return (
-              <div className="mx-4 my-3" key={el.id}>
+              <div className="mx-4 my-3 md:my-2" key={el.id}>
                 <div className="border rounded cursor-pointer">
                   <TitleContent
                     handleShowContent={handleShowContent}
@@ -54,14 +56,8 @@ function Content() {
           })}
         </div>
       )}
-      <div className="mt-10 mb-20 border-t">
-        <div className="flex justify-center items-start p-4 space-x-4">
-          <img src="/img/ellipse1.png" alt="instructor" className="h-9 w-9" />
-          <div className="flex flex-col justify-start items-start">
-            <h1 className="text-lg font-bold">{instructor?.name}</h1>
-            <p className="text-base font-light">{instructor?.description}</p>
-          </div>
-        </div>
+      <div className="md:hidden">
+        <Instructor instructor={instructor} />
       </div>
     </div>
   );

@@ -10,7 +10,7 @@ function Navigation({ item }) {
             key={i}
           >
             <h1 className="text-2xl font-extrabold">{item.title}</h1>
-            <ul className="font-light text-base">
+            <ul className="font-extralight text-sm">
               {item.konten.map((k, i) => {
                 return (
                   <li key={i}>

@@ -1,17 +1,28 @@
-function TopAccordion({ setShowFirst, showFirst, totalMateri, totalDuration }) {
+function TopAccordion({
+  title,
+  setShowFirst,
+  showFirst,
+  totalMateri,
+  totalDuration,
+}) {
   return (
-    <div>
+    <div className="min-w-full">
       <div
         className="flex justify-between items-center p-2 m-2 cursor-pointer"
         onClick={() => setShowFirst(!showFirst)}
       >
-        <div className="flex justify-center items-start flex-col">
-          <h1 className="font-semibold text-lg">Konten Kelas</h1>
-          <p className="font-light text-base">
-            {totalMateri ?? 0} Materi | Total durasi {totalDuration}
-          </p>
+        <div className="flex justify-start items-start flex-col md:min-w-full md:space-y-4">
+          <h1 className="hidden md:block font-extrabold text-3xl">{title}</h1>
+          <div className="flex justify-center items-start flex-col md:flex-row md:items-center md:justify-between md:min-w-full">
+            <h1 className="font-semibold md:font-extrabold text-lg">
+              Konten Kelas
+            </h1>
+            <p className="font-light text-base md:text-sm">
+              {totalMateri ?? 0} Materi | Total durasi {totalDuration}
+            </p>
+          </div>
         </div>
-        <button type="button">
+        <button type="button" className="md:hidden">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="h-7 w-7"

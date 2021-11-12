@@ -23,7 +23,7 @@ function Term() {
   ];
 
   return (
-    <div className="bg-white p-6 mb-8">
+    <div className="bg-white p-6 mb-8 md:mb-0 md:py-8">
       <div className="flex justify-center items-center flex-col space-y-4 md:flex-row md:space-y-0 md:justify-between md:mx-28">
         <div className="flex justify-center items-center space-x-4">
           <p className="font-light text-base">Term and Conditions</p>
@@ -32,7 +32,7 @@ function Term() {
         <div className="flex justify-center items-center space-x-8">
           {item.map(({ url, name, img }, i) => {
             return (
-              <a href={`${url}`}>
+              <a href={`${url}`} key={i}>
                 <img src={img} alt={name} />
               </a>
             );
