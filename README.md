@@ -14,7 +14,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 - deployed on vercel [https://mesx.vercel.app/](https://mesx.vercel.app/)
 - source code on github [https://github.com/mrzacq/mesx](https://github.com/mrzacq/mesx)
 
-> **_miss requirement_**
+> **_still looking for solution_**
 
 1. not smoothly animate dropdown on mobile navigation (except for hamburger menu)
 2. not smoothly animate dropown on content course
