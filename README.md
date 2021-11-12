@@ -18,7 +18,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 1. not smoothly animate dropdown on mobile navigation (except for hamburger menu)
 2. not smoothly animate dropown on content course
-3. fonttype isn't look like the figma ui
+3. fonttype isn't look like the figma ui i've already search on internet but i think it's still doesn't match like on figma
 
 ### Required
 
