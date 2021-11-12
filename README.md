@@ -2,6 +2,23 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
+> **_Already done_**
+
+1. Created using **_Next Js_** and **_tailwind css_** framework
+2. **_Mobile design_** and responsive to the viewport
+3. Treat the video as an **_image_**
+4. Course navigation using **_course.json_** so it is dynamic
+5. Course **_section turn into red_** when user click the course
+6. Course **_parent turn into blue_** when ther is active section
+
+- deployed on vercel [https://mesx.vercel.app/](https://mesx.vercel.app/)
+- source code on github [https://github.com/mrzacq/mesx](https://github.com/mrzacq/mesx)
+
+> **_miss requirement_**
+
+1. not smoothly animate dropdown on mobile navigation (except for hamburger menu)
+2. not smoothley animate dropown on content course
+
 ### Required
 
 ```
