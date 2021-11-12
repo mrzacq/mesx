@@ -17,7 +17,8 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 > **_miss requirement_**
 
 1. not smoothly animate dropdown on mobile navigation (except for hamburger menu)
-2. not smoothley animate dropown on content course
+2. not smoothly animate dropown on content course
+3. fonttype isn't look like the figma ui
 
 ### Required
 
