@@ -15,9 +15,9 @@ function MobileButton({ setShowMenu, showMenu }) {
 
   return (
     <div>
-      <button className={menuBtn} onClick={() => handleMenuMobile()}>
+      <div className={menuBtn} onClick={() => handleMenuMobile()}>
         <div className="menu-btn burger"></div>
-      </button>
+      </div>
     </div>
   );
 }
