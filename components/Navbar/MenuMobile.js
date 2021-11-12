@@ -9,13 +9,13 @@ function MenuMobile({ item }) {
           return (
             <div
               key={i}
-              className="p-2 rounded-md hover:text-gray-800 hover:bg-blue-100 min-w-full"
+              className="p-2 rounded-md hover:text-gray-800 hover:bg-blue-100 min-w-full border"
             >
               <PageUrl name={item.name} url={item.url} svg={item.svg} />
             </div>
           );
         })}
-        <div className="p-2 rounded-md hover:text-gray-800 hover:bg-blue-100 min-w-full">
+        <div className="p-2 rounded-md hover:text-gray-800 hover:bg-blue-100 min-w-full border">
           <Profile />
         </div>
       </div>

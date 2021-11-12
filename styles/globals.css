@@ -16,13 +16,7 @@ a {
 }
 
 * {
-  /* font-family: "Gotham", sans-serif;  */
   font-family: "Gotham Black", sans-serif;
-  /* font-family: "Gotham Light", sans-serif; */
-  /* font-family: "Gotham Thin", sans-serif; */
-  /* font-family: "Gotham XLight", sans-serif; */
-  /* font-family: "Gotham Book", sans-serif; */
-  /* font-family: "Gotham Ultra", sans-serif; */
   box-sizing: border-box;
   scroll-behavior: smooth;
   @apply select-none;
@@ -34,4 +28,59 @@ a {
 
 .border-active-blue {
   border-left: 4px solid #a4e6ff;
+}
+
+.menu-btn {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.menu-btn.burger {
+  width: 20px;
+  height: 3px;
+  background: #000;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
+  transition: all 0.3s ease-in-out;
+}
+
+.menu-btn.burger::before,
+.menu-btn.burger::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 3px;
+  background: #000;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
+  transition: all 0.3s ease-in-out;
+}
+
+.menu-btn.burger::before {
+  transform: translateY(-8px);
+}
+.menu-btn.burger::after {
+  transform: translateY(8px);
+}
+
+/* animation */
+
+.menu-btn.open .menu-btn.burger {
+  transform: translateX(-50px);
+  background: transparent;
+  box-shadow: none;
+}
+
+.menu-btn.open .menu-btn.burger::before {
+  transform: rotate(45deg) translate(35px, -35px);
+}
+
+.menu-btn.open .menu-btn.burger::after {
+  transform: rotate(-45deg) translate(35px, 35px);
 }
